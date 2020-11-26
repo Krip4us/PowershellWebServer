@@ -1,4 +1,4 @@
-$uri = (gc "C:\Users\Administrador\LionWebServerDataRecovery").split(",")[2]
+$uri = (gc "$env:userprofile\LionWebServerDataRecovery").split(",")[2]
 $routes = @{
     "/" = { return '<html><body>Servidor web</body></html>' }
 }
